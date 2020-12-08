@@ -31,7 +31,7 @@
   color:#000;
  }
 
- .chtWindow--headerbuttons{
+ .chatWindow--headerbuttons{
   display: flex;
   align-items: center;
   margin-right: 15px;
@@ -45,6 +45,8 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  overflow: hidden;
+  transition: all ease 0.3s;
  }
 
  .chatWindow--body{
@@ -85,5 +87,21 @@
  }
 
  .chatWindow--pos{
+   display: flex;
    margin: 0 15px;
+}
+
+.chatWindow--emojiarea{
+  height: 200px;
+  overflow-y: hidden;
+  transition: all ease 0.3s;
+}
+
+aside.emoji-picker-react{
+  width: auto;
+  background-color: none;
+}
+
+emoji-picker-react .emoji-group:before{
+  background: none;
 }
