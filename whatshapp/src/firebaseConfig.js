@@ -1,9 +1,9 @@
 
 export default {
-  apiKey: "AIzaSyDIM9ltEJ1aqB6PP5UxBY2BOOdjgN0Eq8A",
-  authDomain: "react-whatshapp.firebaseapp.com",
-  projectId: "react-whatshapp",
-  storageBucket: "react-whatshapp.appspot.com",
-  messagingSenderId: "854924491332",
-  appId: "1:854924491332:web:d6c3b9846efc297e8a9a11"
+  apiKey: "AIzaSyB8ZeDC7-J_50plokze0SSjcBygVGYv8pU",
+  authDomain: "react-whatsapp-cdd5a.firebaseapp.com",
+  projectId: "react-whatsapp-cdd5a",
+  storageBucket: "react-whatsapp-cdd5a.appspot.com",
+  messagingSenderId: "826120007294",
+  appId: "1:826120007294:web:580db78aa0c99742eab22f"
 };
