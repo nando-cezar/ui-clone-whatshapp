@@ -12,15 +12,11 @@ import ChatIcon from '@material-ui/icons/Chat';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import SearchIcon from '@material-ui/icons/Search';
 
+import Api from './Api';
+
 export default () => {
 
-  const [chatlist, setChatList] = useState([
-    {chatId: 1, title: 'Fulano de Tal', image: 'https://www.w3schools.com/w3images/avatar2.png'},
-    {chatId: 2, title: 'Fulano de Tal', image: 'https://www.w3schools.com/w3images/avatar2.png'},
-    {chatId: 3, title: 'Fulano de Tal', image: 'https://www.w3schools.com/w3images/avatar2.png'},
-    {chatId: 4, title: 'Fulano de Tal', image: 'https://www.w3schools.com/w3images/avatar2.png'},
- 
-  ]);
+  const [chatlist, setChatList] = useState([]);
   const [activeChat, setActiveChat] = useState({});
   const [user, setUser]  = useState(null);
 
@@ -36,7 +32,7 @@ export default () => {
       name: u.displayName,
       avatar: u.photoURL
     };
-    //
+    await Api.addUser(newUser);
     setUser(newUser);
   }
 
